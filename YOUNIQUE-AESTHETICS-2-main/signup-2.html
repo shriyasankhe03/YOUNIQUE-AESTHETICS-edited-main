@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+<head>
+	<title>Sign Up</title>
+	<style>
+        *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        }
+
+		body {
+			font-family: Arial, sans-serif;
+			background-image: url(960x0.jpg);
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			color: #fff;
+			
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 90px;
+			color: #333;
+			font-weight: bold;
+			font-size: 36px;
+			
+		}
+
+		form {
+			background-color: #fff;
+			border: 1px solid #ddd;
+			padding: 30px;
+			margin: 30px auto;
+			max-width: 500px;
+			box-shadow: 0px 0px 10px #ccc;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			color: #666;
+			font-size: 18px;
+		}
+
+		input[type="text"], input[type="email"], input[type="password"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			background-color: #666;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer; 
+		}
+
+		input[type="submit"]:hover {
+			background-color: #d5be80;  
+		}
+
+		nav {
+			background-color: #333;
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			margin-right: 20px;
+			font-size: 18px;
+		}
+
+		nav a:hover {
+			color: #d5be80;
+		}
+	</style>
+</head>
+<body>
+         <!--Navbar Section-->
+         <nav class="navbar">
+            <ul class="links-container">
+                 <li class="link-item"><a href="index.html" class="link">Home</a></li>
+                 <li class="link-item"><a href="product.html" class="link">Products</a></li>
+                 <li class="link-item"><a href="signup-2.html" class="link">About</a></li>
+                 <li class="link-item"><a href="login.html" class="link">Contact</a></li>
+            </ul>
+            <div class="user-interactions">
+                 <div class="cart">
+                      <img src="cart-1.png" class="cart-icon">
+                      <span class="cart-item-count">00</span>
+                 </div>
+                 <div class="user">
+                      <img src="user-2.png" class="user-icon" href="signup-2.html" alt="">
+                 </div>
+            </div>
+       </nav>
+	<h1>New Here? Sign Up!</h1>
+	<form>
+		<label for="name">Full Name</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email Address</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" minlength="8" required>
+
+		<label for="confirm_password">Confirm Password</label>
+		<input type="password" id="confirm_password" name="confirm_password" minlength="8" required>
+
+		<input type="submit" value="Create Account">
+	</form>
+</body>
+</html>

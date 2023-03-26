@@ -1,0 +1,184 @@
+<html>
+<!--about page-->
+<head>
+    <title>About</title>
+</head>
+<style>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.navbar{
+    background-color: #131313;
+    height: 80;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.2rem;
+    position: sticky;
+    top:0;
+    z-index: 999; 
+}
+
+.navbar_container{
+    display:flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px; 
+    margin: 0 auto;
+    padding: 0 50px;
+
+}
+
+#navbar_logo{
+    background-color:green;
+    background-image:linear-gradient(to top, #ff0844 0%, #ffb1ff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.fa-gem{
+    margin-right: 0.5rem;
+}
+
+.navbar_menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar_items{
+    height: 80px;
+}
+
+.navbar_links{
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar_btn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border:none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    color:#fff;
+}
+
+.button:hover{
+    background: rgb(149, 50, 50);
+    transition: all 0.3s ease;
+}
+
+.navbar_links:hover{
+    background: rgb(149, 50, 50);
+    transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: white;
+}
+
+.aboutbox {
+  margin: 10px;
+  background-color: #000000;
+}
+.about{
+    text-align: center;
+    color: white;
+}
+.para{
+    text-align: left;
+    position: absolute;
+    top: 210px;
+    left: 500px;
+    width: 400px;
+    
+}
+
+#buildingimg{
+    position:absolute;
+    top: 50px;
+    left: 430px;
+
+}
+
+</style>
+<body>
+    <!--Navbar Section-->
+    <nav class="navbar">
+        <div class="navbar_container">
+             <a href="/index.html" id="navbar_logo">YOUNIQUE AESTHETICS</a>
+             <ul class="navbar_menu">
+             <li class="navbar_item">
+                  <a href="/index.html" class="navbar_links">Home</a>
+             </li>
+             <li class="navbar_item">
+                  <a href="/products.html" class="navbar_links">Products</a>
+             </li>
+             <li class="navbar_item">
+                  <a href="/about.html" class="navbar_links">About</a>
+             </li>
+
+             <li class="navbar_item">
+                  <a href="/products.html" class="navbar_links">Cart</a>
+             </li>
+             <li class="navbar_btn">
+                  <a href="/signup.html" class="button">Sign up</a>
+             </li>
+             </ul>
+        </div>
+   </nav>
+  <div class="aboutbox">
+    <div class="about">
+        <br>
+        <h1>A DIFFERENT PERSPECTIVE</h1>
+        <br>
+    </div>
+</div>  
+    <h1>HELLO!</h1>
+    <img src="james.jpg">
+    <div class="para">
+    <p>This project started after I failed to finish my studies in industrial design around 2011 and it has continued to grow ever since. My goal is to deconstruct the invisible design language of simple everyday objects and tweak their fundamental properties in order to surprise you and make you laugh. But also to help you appreciate the complexity and depth of interactions with the simplest of objects around us. As a poor designer I have started the project by making conceptual 3d visualisations, but recently I have decided to spend all my savings to produce prototypes, because what would the world be if there were no Uncomfortable objects out there?</p>
+    </p>
+    <img src="building.jpg", style="height: 400px; width: 400px;", id="buildingimg">
+    </div>
+ 
+</body>
+</html>
